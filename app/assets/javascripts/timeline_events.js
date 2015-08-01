@@ -38,14 +38,13 @@ var EmptyEvent = function () {
 var CityFiveBuilt = new Event("CityFiveBuilt",-20,0,20, CITY_FIVE_BUILT,"CityFive")
 
 var TheOrder = new Event("TheOrder",0,20,-20, THE_ORDER);
-
 //In the original version of Zybourne Clock, Dr. Zybourne developed his time-travelling Clock after the World War. But I do not want to implement events being dependent on each other until AFTER the MVP.
 var ClockInvented = new Event("ClockInvented", -20,0,20, CLOCK_INVENTED);
 
 var Zepplins = new Event("Zepplins",-20,20,0, ZEPPLINS);
 
 //These events are in the Player's hand at the start of Zybourne Clock Redux. This is just a MVP, so I only have two events here for now.
-var ChildSpybots = new Event("ChildSpybots",0,-20,0, CHILD_SPYBOTS)
+var ChildSpybots = new Event("ChildSpybots",20,-20,0, CHILD_SPYBOTS)
 
 var Vaundermause = new Event("Vaundermause",20,0,-20, VAUNDERMAUSE)
 

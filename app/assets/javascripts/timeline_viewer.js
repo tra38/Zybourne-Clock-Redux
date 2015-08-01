@@ -14,48 +14,42 @@ var purgeTimeline = function() {
 
 $(document).ready(function() {
   SetOriginalTimeline()
+  RunTimeline();
   console.log(Timeline.length)
 
-  //This sets up the game and runs the original timeline.
-  SetOriginalTimeline();
-  RunTimeline();
-
-  //Console.log("Metrics") is meant as a debugging tool to help me know what are the current status of the metrics; players are not "supposed" to see them. However, this is the MVP stage, and it may be necessary in future versions to expose these Metrics to help increase player enjoyment and encourage mini-maxing.
-  console.log(Metrics);
-
-  //Check to see if I can delete an event. Then run the timeline.
-  DeleteEvent(TheOrder);
-  RunTimeline();
-
-  //Try to delete another event (should fail).
-  DeleteEvent(TheOrder);
-
-  //Add a new event, and then run the timeline.
-  AddEvent(ChildSpybots);
-  RunTimeline();
-
-  //Try to add more events (should fail!)
-  AddEvent(ChildSpybots);
-
-  //Try to delete an Event that is not in the system (should fail)
-  DeleteEvent(Vaundermause);
-
-  //These commands are me actually playing the game and seeing if I can get a decent result. Not doing so well though on that front.
-  DeleteEvent(Zepplins);
-  RunTimeline();
-
-  AddEvent(Vaundermause);
-  RunTimeline();
-
-  DeleteEvent(Vaundermause);
-  RunTimeline();
-
-  AddEvent(TheOrder);
-  RunTimeline();
-
-  DeleteEvent(CityFiveBuilt);
-  RunTimeline();
-  console.log(Metrics);
+  +
+  +//Check to see if I can delete an event. Then run the timeline.
+  +DeleteEvent(TheOrder);
+  +RunTimeline();
+  +
+  +//Try to delete another event (should fail).
+  +DeleteEvent(TheOrder);
+  +
+  +//Add a new event, and then run the timeline.
+  +AddEvent(ChildSpybots);
+  +RunTimeline();
+  +
+  +//Try to add more events (should fail!)
+  +AddEvent(ChildSpybots);
+  +
+  +//Try to delete an Event that is not in the system (should fail)
+  +DeleteEvent(Vaundermause);
+  +
+  +//These commands are me actually playing the game and seeing if I can get a decent result. Not doing so well though on that front.
+  +DeleteEvent(Zepplins);
+  +RunTimeline();
+  +
+  +AddEvent(Vaundermause);
+  +RunTimeline();
+  +
+  +DeleteEvent(Vaundermause);
+  +RunTimeline();
+  +
+  +AddEvent(TheOrder);
+  +RunTimeline();
+  +
+  +DeleteEvent(CityFiveBuilt);
+  +RunTimeline();
   //This was the best outcome I got in this game: The World War ends in a stalemate, the Treaty of Overture
   //was signed, and rationing is implemented. All metrics were at 50, so it was
   //as if there were no events at all in the timeline! A pretty boring result, but I'll take it.

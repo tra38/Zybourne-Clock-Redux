@@ -42,5 +42,6 @@ var RunTimeline = function() {
   DecideScore();
   $("#stats").append( "<p>Score: "+GameRating.Score+"</p>")
   $("#stats").append( "<p>Timelines Created: "+GameRating.Timelines+"</p>")
+  console.log(Metrics);
   debugger
 }
