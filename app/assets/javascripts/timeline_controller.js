@@ -17,11 +17,11 @@ function DeleteEvent(history_event) {
     PlayerHand.push(history_event)
     Timeline.splice(Timeline.indexOf(history_event), 1);
     Timeline[3] = EmptyEvent;
-    console.log("The event has been deleted from the Timeline and added to your hand.");
+    // console.log("The event has been deleted from the Timeline and added to your hand.");
   }
   else
   {
-    console.log("That event does not exist! You can't delete events that does not exist!");
+    alert("That event does not exist! You can't delete events that does not exist!");
   }
 };
 
@@ -34,7 +34,7 @@ function AddEvent(history_event) {
   {
     Timeline[3] = history_event;
     PlayerHand.splice(PlayerHand.indexOf(history_event), 1);
-    console.log("The event has been added into the Timeline and deleted from your hand.")
+    // console.log("The event has been added into the Timeline and deleted from your hand.")
   }
   else
   {
@@ -88,6 +88,10 @@ function DecideScore() {
   TechnologicalProgressPoints();
 }
 
+//DestroyClock existed in the original 'console' prototype.
+//In practice, I saw no reason why anyone would want to destroy the clock,
+//especially as they can stop the time manipulation simply by closing
+//the browser.
 function DestroyClock() {
   console.log("The Clock has been destroyed. The timeline is now permanent. History is now fixed. I hope you're happy.")
   BlankLine();
