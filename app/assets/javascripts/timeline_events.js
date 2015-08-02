@@ -46,6 +46,12 @@ var ChildSpybots = new Event("ChildSpybots",20,-20,0, CHILD_SPYBOTS)
 
 var Vaundermause = new Event("Vaundermause",20,0,-20, VAUNDERMAUSE)
 
+var SocialPlanningRevolution = new Event("SocialPlanningRevolution",-40,20,20, SOCIAL_PLANNING)
+
+var Nanotech = new Event("Nanotech",20,-40,20, NANOTECH)
+
+var LuddistCrusade = new Event("LuddistCrusade",0,40,-40, LUDDIST_CRUSADE)
+
 var Timeline = []
 
-var PlayerHand = [ChildSpybots, Vaundermause]
+var PlayerHand = [ChildSpybots, Vaundermause, SocialPlanningRevolution, Nanotech, LuddistCrusade]
