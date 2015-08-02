@@ -8,7 +8,7 @@ var Metrics = {
 
 var GameRating = {
   Score: 0,
-  Timelines: 0,
+  Timelines: -1,
 }
 
 //ResetMetrics is called at the start of a new Timeline! This is necessary so that the Events can properly be
@@ -46,7 +46,7 @@ var RunTimeline = function() {
 }
 
 var addEventToHand = function(event) {
-  $("#hand").append("<button class='addEvent' id='"+event.Title+"'>"+event.Title+"</button> &nbsp;")
+  $("#hand").append("<p><button class='addEvent' id='"+event.Title+"'>"+event.Title+"</button></p>")
 }
 
 var displayEvent = function(event) {
