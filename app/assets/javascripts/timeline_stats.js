@@ -40,12 +40,13 @@ var RunTimeline = function() {
   DecideScore();
   $("#stats").append( "<p>Score: "+GameRating.Score+"</p>")
   $("#stats").append( "<p>Timelines Created: "+GameRating.Timelines+"</p>")
+  $("#hand").append("Your Events: ")
   PlayerHand.forEach(addEventToHand)
   setUpButtons();
 }
 
 var addEventToHand = function(event) {
-  $("#hand").append("<button class='addEvent' id='"+event.Title+"'>"+event.Title+"</button>")
+  $("#hand").append("<button class='addEvent' id='"+event.Title+"'>"+event.Title+"</button> &nbsp;")
 }
 
 var displayEvent = function(event) {
