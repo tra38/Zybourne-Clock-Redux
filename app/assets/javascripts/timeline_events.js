@@ -1,5 +1,3 @@
-console.log("Timeline Events required!")
-
 //All Events inherit from this Constructor Function. It stores all our inputs into Object values,
 //so that we can later use those values when we 'call' them.
 var Event = function Event(Title, WorldWar, SocialStability, TechnologicalProgress, Message, Event_Variable) {
@@ -23,7 +21,7 @@ Event.prototype = {
     {
       CityFive = true;
     }
-    return (this.Message + "<button id="+this.Title+">Delete</button>")
+    return (this.Message + "<button class='deleteEvent' id='"+this.Title+"'>Delete</button>")
   }
 };
 

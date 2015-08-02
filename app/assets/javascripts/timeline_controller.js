@@ -10,7 +10,7 @@
 function DeleteEvent(history_event) {
   if (Timeline[3] === EmptyEvent)
   {
-    console.log("You cannot delete any more events from the Timeline, for fear of causing permanent damage to the timeline.")
+    alert("You cannot delete any more events from the Timeline, for fear of causing permanent damage to the timeline.")
   }
   else if (Timeline.indexOf(history_event) != -1)
   {
@@ -28,7 +28,7 @@ function DeleteEvent(history_event) {
 function AddEvent(history_event) {
   if (PlayerHand.indexOf(history_event) === -1)
   {
-    console.log("This event is not in your Hand! You cannot add events that are already in the Timeline.")
+    alert("This event is not in your Hand! You cannot add events that are already in the Timeline.")
   }
   else if (Timeline[3] === EmptyEvent)
   {
@@ -38,7 +38,7 @@ function AddEvent(history_event) {
   }
   else
   {
-    console.log("The timeline is full! A cliff can only hold four balls, and a timeline can only hold four events! Delete an event if you want to continue!")
+    alert("The timeline is full! A cliff can only hold four balls, and a timeline can only hold four events! Delete an event if you want to continue!")
   }
 };
 

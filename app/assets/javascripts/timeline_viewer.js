@@ -6,6 +6,7 @@ var SetOriginalTimeline = function() {
 }
 
 var purgeTimeline = function() {
+  $("#hand").html("")
   $("#stats").html("")
   $("#timeline").html("")
   $("#results").html("")
@@ -15,8 +16,6 @@ var purgeTimeline = function() {
 $(document).ready(function() {
   SetOriginalTimeline()
   RunTimeline();
-  console.log(Timeline.length)
-
   +
   +//Check to see if I can delete an event. Then run the timeline.
   +DeleteEvent(TheOrder);

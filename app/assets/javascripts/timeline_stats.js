@@ -34,14 +34,34 @@ var BlankLine = function()
 var RunTimeline = function() {
   ResetMetrics()
   GameRating.Timelines += 1
-  $("#timeline").append( Timeline[0].call() )
-  $("#timeline").append ( Timeline[1].call() )
-  $("#timeline").append ( Timeline[2].call() )
-  $("#timeline").append ( Timeline[3].call() )
+  console.log(PlayerHand.length)
+  Timeline.forEach(displayEvent)
   Results();
   DecideScore();
   $("#stats").append( "<p>Score: "+GameRating.Score+"</p>")
   $("#stats").append( "<p>Timelines Created: "+GameRating.Timelines+"</p>")
-  console.log(Metrics);
-  debugger
+  PlayerHand.forEach(addEventToHand)
+  setUpButtons();
+}
+
+var addEventToHand = function(event) {
+  $("#hand").append("<button class='addEvent' id='"+event.Title+"'>"+event.Title+"</button>")
+}
+
+var displayEvent = function(event) {
+  $("#timeline").append(event.call() )
+}
+
+var setUpButtons = function() {
+  $(".deleteEvent").click(function(event) {
+    event.preventDefault();
+    DeleteEvent(window[$(this).attr("id")]);
+    RunTimeline();
+  });
+  $(".addEvent").click(function(event) {
+    event.preventDefault();
+    AddEvent(window[$(this).attr("id")]);
+    RunTimeline();
+    console.log(PlayerHand);
+  });
 }
