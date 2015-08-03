@@ -6,4 +6,4 @@ Location of Important "Game" Files:
 * HTML file: app/view/timeline/index.html.erb
 * Javascript files: app/assets/javascripts
 
-Programs Used: JQuery, Materialize
+Libaries Used: JQuery, Materialize
