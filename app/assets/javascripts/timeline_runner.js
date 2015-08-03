@@ -148,5 +148,6 @@ var Results = function () {
       $("#results").append(RITUALIZED_BLOOD_FEUDS);
     }
   };
+  $("#results").append("<h5 class='center-align'>The Outcome</h5>")
   WorldWarTrigger();
 };
