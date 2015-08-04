@@ -1,5 +1,5 @@
 # Zybourne-Clock-Redux
-A game where you modify the timeline of a fictional Steampunk planet. Licensed under the MIT License.
+A game where you modify the timeline of a fictional Steampunk planet. Licensed under the MIT License. The game is playable [on this website](http://zybourne-clock-redux.herokuapp.com).
 
 Location of Important "Game" Files:
 
